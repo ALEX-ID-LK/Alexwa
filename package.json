@@ -1,10 +1,10 @@
 {
-  "name": "alex-wa-services-final-deploy",
+  "name": "alex-wa-services-final-deploy-root",
   "version": "1.0.0",
-  "description": "Final guaranteed auto-deploy config for ALEX WA Services.",
-  "main": "api/index.js",
+  "description": "Root configuration for auto-deploying ALEX WA Services.",
+  "main": "index.js",
   "scripts": {
-    "start": "node api/index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "ejs": "^3.1.9",

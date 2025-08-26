@@ -1,0 +1,55 @@
+/* ====================================================== */
+/* FILE: public/css/style.css                           */
+/* ====================================================== */
+:root {
+    --bg-dark: #050816;
+    --primary-blue: #00BFFF;
+    --primary-green: #39FF14;
+    --glow-blue: rgba(0, 191, 255, 0.5);
+    --glow-green: rgba(57, 255, 20, 0.5);
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-dark);
+    color: #e2e8f0;
+}
+#particles-js {
+    position: fixed; width: 100%; height: 100%;
+    top: 0; left: 0; z-index: 0;
+}
+.content-wrapper { position: relative; z-index: 1; }
+.glass-card {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(0, 191, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.glass-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 40px var(--glow-blue);
+}
+.primary-gradient-text {
+    background: linear-gradient(90deg, var(--primary-blue), var(--primary-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn-contact {
+    background: transparent; border: 2px solid var(--primary-blue);
+    color: var(--primary-blue); transition: all 0.3s ease;
+}
+.btn-contact:hover {
+    background: var(--primary-blue); color: var(--bg-dark);
+    box-shadow: 0 0 25px var(--glow-blue);
+}
+.nav-link {
+    position: relative; transition: color 0.3s; color: #94a3b8;
+}
+.nav-link:hover, .nav-link.active { color: white; }
+.nav-link::after {
+    content: ''; position: absolute; width: 0; height: 2px;
+    bottom: -6px; left: 50%; transform: translateX(-50%);
+    background: linear-gradient(90deg, var(--primary-blue), var(--primary-green));
+    transition: width 0.3s ease;
+}
+.nav-link.active::after, .nav-link:hover::after { width: 100%; }

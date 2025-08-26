@@ -1,0 +1,24 @@
+<!-- ====================================================== -->
+<!-- FILE: views/partials/navbar.ejs                      -->
+<!-- ====================================================== -->
+<header id="header" class="bg-black/30 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="#home" class="text-3xl font-extrabold primary-gradient-text">ALEX</a>
+        <div class="hidden md:flex space-x-8 items-center font-semibold">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#ban" class="nav-link">Ban Service</a>
+            <a href="#unban" class="nav-link">Unban Service</a>
+            <a href="#crash" class="nav-link">Crash Service</a>
+        </div>
+        <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 flex flex-col items-center space-y-4">
+         <a href="#home" class="nav-link active">Home</a>
+         <a href="#ban" class="nav-link">Ban Service</a>
+         <a href="#unban" class="nav-link">Unban Service</a>
+         <a href="#crash" class="nav-link">Crash Service</a>
+    </div>
+</header>
+
